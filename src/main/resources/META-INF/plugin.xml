@@ -9,13 +9,10 @@
             <li>Run commands from Intellij sidebar</li>
         </ul>
 
-
     </description>
     <vendor>dullaz</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <externalAnnotator language="Markdown" implementationClass="com.github.dullaz.freshdocsplugin.annotator.StaleDocsAnnotator"/>
