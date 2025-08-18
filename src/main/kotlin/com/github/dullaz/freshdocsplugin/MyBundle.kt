@@ -1,4 +1,4 @@
-package com.github.dullaz.freshdocsintellij
+package com.github.dullaz.freshdocsplugin
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

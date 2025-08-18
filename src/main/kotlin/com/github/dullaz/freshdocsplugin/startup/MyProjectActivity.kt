@@ -1,4 +1,4 @@
-package com.github.dullaz.freshdocsintellij.startup
+package com.github.dullaz.freshdocsplugin.startup
 
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project

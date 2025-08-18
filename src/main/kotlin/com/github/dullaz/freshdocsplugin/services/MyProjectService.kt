@@ -1,9 +1,9 @@
-package com.github.dullaz.freshdocsintellij.services
+package com.github.dullaz.freshdocsplugin.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.dullaz.freshdocsintellij.MyBundle
+import com.github.dullaz.freshdocsplugin.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

@@ -1,4 +1,4 @@
-package com.github.dullaz.freshdocsintellij.toolWindow
+package com.github.dullaz.freshdocsplugin.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.dullaz.freshdocsintellij.MyBundle
-import com.github.dullaz.freshdocsintellij.services.MyProjectService
+import com.github.dullaz.freshdocsplugin.MyBundle
+import com.github.dullaz.freshdocsplugin.services.MyProjectService
 import javax.swing.JButton
 
 

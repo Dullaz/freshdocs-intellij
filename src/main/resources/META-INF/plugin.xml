@@ -1,7 +1,16 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.dullaz.freshdocsintellij</id>
-    <name>freshdocs-intellij</name>
+    <id>com.github.dullaz.freshdocs</id>
+    <name>freshdocs</name>
+    <description>Adds support to Intellij for the FreshDocs cli app:
+        <ul>
+            <li>Find docs that are linked to given code file</li>
+            <li>Hyperlinked annotations to files/folders they are linked to</li>
+            <li>Run commands from Intellij sidebar</li>
+        </ul>
+
+
+    </description>
     <vendor>dullaz</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -9,7 +18,7 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.dullaz.freshdocsintellij.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.dullaz.freshdocsintellij.startup.MyProjectActivity" />
+        <externalAnnotator language="Markdown" implementationClass="com.github.dullaz.freshdocsplugin.annotator.StaleDocsAnnotator"/>
+        <codeInsight.lineMarkerProvider language="Markdown" implementationClass="com.github.dullaz.freshdocsplugin.annotator.FreshLineMarkerProvider"/>
     </extensions>
 </idea-plugin>
